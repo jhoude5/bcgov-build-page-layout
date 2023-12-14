@@ -1,0 +1,74 @@
+
+    <div class="field field--label-inline py-2">
+      {% if not node.field_authoritative_info.isempty %}
+
+          <div class="ar-brand">{{ node.field_authoritative_info|view('section_4') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_authoritative_info.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}
+        </div>
+
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_critical_information.isempty %}
+
+        <div class="ar-brand">{{ node.field_critical_information|view('section_4') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_critical_information.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}
+        </div>
+
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_information_schedule.isempty %}
+
+        <div class="ar-brand">{{ node.field_information_schedule|view('section_4') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_information_schedule.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}</div>
+
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_security_classification.isempty %}
+
+        <div class="ar-brand">{{ node.field_security_classification|view('section_4') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_security_classification.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}
+        </div>
+
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_high_value_info.isempty %}
+
+        <div class="ar-brand">{{ node.field_high_value_info|view('section_4') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_high_value_info.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}
+        </div>
+
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_review_interval.isempty %}
+
+        <div class="ar-brand">{{ node.field_review_interval|view('section_4') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_review_interval.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}
+        </div>
+
+      {% endif %}
+    </div>
+
+<hr/>

@@ -1,0 +1,61 @@
+
+    <div class="field field--label-inline py-2">
+      {% if not node.body.isempty %}
+
+          <div class="ar-brand">{{ node.body|view('section_2') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.body.fieldDefinition.label }}:
+          <span class="text-danger">{{ '<em>Required *</em>'|t }}</span>
+        </div>
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_published_date.isempty %}
+
+        <div class="ar-brand">{{ node.field_published_date|view('section_2') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_published_date.fieldDefinition.label }}:
+          <span class="text-danger">{{ '<em>Required *</em>'|t }}</span>
+        </div>
+
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_modified_date.isempty %}
+
+        <div class="ar-brand">{{ node.field_modified_date|view('section_2') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_modified_date.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}
+        </div>
+
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_data_set_historical_change.isempty %}
+
+        <div class="ar-brand">{{ node.field_data_set_historical_change|view('section_2') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_data_set_historical_change.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}
+        </div>
+
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_primary_responsibility_org.isempty %}
+
+        <div class="ar-brand">{{ node.field_primary_responsibility_org|view('section_2') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_primary_responsibility_org.fieldDefinition.label }}:
+          <span class="text-danger">{{ '<em>Required *</em>'|t }}</span>
+        </div>
+
+      {% endif %}
+    </div>
+<hr/>

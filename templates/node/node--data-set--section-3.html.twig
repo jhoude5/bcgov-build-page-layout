@@ -1,0 +1,39 @@
+
+    <div class="field field--label-inline py-2">
+      {% if not node.field_source_system.isempty %}
+
+          <div class="ar-brand">{{ node.field_source_system|view('section_3') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_source_system.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}
+        </div>
+
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_data_sets_used.isempty %}
+
+        <div class="ar-brand">{{ node.field_data_sets_used|view('section_3') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_data_sets_used.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}
+        </div>
+
+      {% endif %}
+    </div>
+    <div class="field field--label-inline py-2">
+      {% if not node.field_data_quality_issues.isempty %}
+
+        <div class="ar-brand">{{ node.field_data_quality_issues|view('section_3') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_data_quality_issues.fieldDefinition.label }}:
+          {{ '<em>Optional</em>'|t }}
+        </div>
+
+      {% endif %}
+    </div>
+
+<hr/>

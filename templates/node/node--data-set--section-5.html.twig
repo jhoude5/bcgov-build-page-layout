@@ -1,0 +1,15 @@
+
+    <div class="field field--label-inline py-2">
+      {% if not node.field_columns.isempty %}
+
+          <div class="ar-brand">{{ node.field_columns|view('section_5') }}</div>
+
+      {% else %}
+        <div class="field--label fw-normal">{{ node.field_columns.fieldDefinition.label }}:
+          <span class="text-danger">{{ '<em>Required *</em>'|t }}</span>
+        </div>
+
+      {% endif %}
+    </div>
+
+
